@@ -78,7 +78,7 @@ def longest_running_instance(asgName, region):
             long_time = uptime
     print(r"Longest running instance is {0} and running time is {1}".format(long_instance,long_time))
 
-auto_scaling_grp_name = 'ASG-Livevox'
+auto_scaling_grp_name = 'lv-test-cpu'
 region = 'ap-south-1'
 if get_desired_capacity(auto_scaling_grp_name):
     print("Desired Instances are running")
